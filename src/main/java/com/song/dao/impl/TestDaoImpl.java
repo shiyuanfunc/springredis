@@ -29,7 +29,7 @@ public class TestDaoImpl implements TestDao {
         System.out.println(o.toString());
 
         //普通字符串采用  String  StringRedisSerializer序列化
-        Object nam = redisTemplate.opsForValue().get("nam");
+        Object nam = redisTemplate.opsForValue().get("Test");
         System.out.println(nam.toString());
         System.out.println(redisTemplate);
     }
